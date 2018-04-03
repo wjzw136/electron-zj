@@ -1,28 +1,49 @@
-
-
 <div class="loginclass">
-    <div class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Modal title</h4>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="padding:5px">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span id="closebotton" aria-hidden="true">&times;</span>
+                </button>
+                <h3 class="modal-title">账号注册</h3>
             </div>
             <div class="modal-body">
-                <p>One fine body&hellip;</p>
+                <!-- <form class="form-horizontal"> -->
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">账号</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">密码</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="form-group">
+                    <!-- <div class="col-sm-offset-2 col-sm-10"> -->
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <!-- </form> -->
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="modal-footer"style="text-align:center">
+                <button type="button" class="btn btn-success">（成功）Success</button>
+
+                <!-- <button type="button" class="btn btn-default" data-dismiss="modal">注册</button> -->
+                <button type="button" class="btn btn-primary">登陆</button>
             </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
 
 
 
 
-    <div id="header">
+
+    <!-- <div id="header">
         <div id="logo"></div>
         <div id="bt">
             <ul id="cd">
@@ -41,16 +62,22 @@
         </div>
         <button type="button" class="btn btn-success">（成功）Success</button>
         <button type="button" class="btn btn-success">（成功）Success</button>
-    </div>
+    </div> -->
 
 </div>
 <script>
-    var ipc=require('electron').ipcRenderer;
-    document.getElementById('gb1').addEventListener('click',function(){
-        ipc.send('close-loginview');
+    // var ipc = require('electron').ipcRenderer;
+    // document.getElementById('gb1').addEventListener('click', function () {
+    //     ipc.send('close-loginview');
+    // })
+    // document.getElementById('closebotton').addEventListener('click',function(){
+    //     document.getElementsByClassName('loginclass').style.display='none';
+    //     alert('dsdsdad')
+    // })
+
+    $('#closebotton').click(function () {
+        $('.loginclass').css({ 'display': 'none' })
+        $('#zhebi').css({ "backgroundColor": "#fff", 'z-index': '-100' });
     })
-
-
-
 
 </script>

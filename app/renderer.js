@@ -144,3 +144,8 @@ if (dlyesno){
 $('.dengluno').click(function(){
     ipc.send('open-loginview');
 })
+
+$('#closebotton').click(function(){
+    alert('dsdsdad')
+
+ })

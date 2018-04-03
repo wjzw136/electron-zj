@@ -102,14 +102,10 @@
     top: 30px;
   }
   #loadhtml{
-    left: 100px;
-    width: 500px;
+    width: 250px;
     position: fixed;
     z-index: -90;
     top:100px;
     text-align: center
 
-  }
-  .loginclass{
-    width: 300px;
   }
