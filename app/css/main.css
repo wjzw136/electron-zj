@@ -5,7 +5,7 @@
   body,li,ul,img,a,div{
     margin: 0px;
     padding: 0px;
-    font-size: 15px;
+    font-size: 14px;
   }
   body,html{
     position: relative;
@@ -13,7 +13,6 @@
     font-family: 微软雅黑;
     overflow: hidden;
     height: 100%;
-    background-color: cadetblue
   }
   #header{
     -webkit-app-region: drag;
@@ -51,8 +50,9 @@
   }
   #header #headerright li{
     float: left;
-    padding: 0px 20px;
+    padding: 0px 15px;
     cursor:default;
+    font-size: 16px
   }
   #main{
     width: 100%;
@@ -100,4 +100,16 @@
     z-index: -100;
     opacity: 0.5;
     top: 30px;
+  }
+  #loadhtml{
+    left: 100px;
+    width: 500px;
+    position: fixed;
+    z-index: -90;
+    top:100px;
+    text-align: center
+
+  }
+  .loginclass{
+    width: 300px;
   }

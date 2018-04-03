@@ -8,6 +8,8 @@ var ipc=require('electron').ipcRenderer;
 var view =remote.getCurrentWindow();
 //var mainWindow=remote.BrowserWindow;
 //退出程序
+
+//$('#left').load("./left.html");
 $('#gb').click(
     ()=>{
     var app =remote.app;
@@ -42,17 +44,29 @@ var headerbj=$('#header').css('backgroundColor');
 var headercolor=$('#header li').css('color');
 var headerh=$('#header').css('height')
 function getzicandan(id){
-        var str='';
-        //alert(caidan.wj.length);
-        for (let i = 0; i < caidan[id].length; i++) {
-            str +='<li>'+caidan[id][i]+'</li>';
-        }
-        fdcd.html(str);
-        //var lileft=$(this).offset().left;
-        fdcd.css({'top':headerh,'display':''});
-        $('#zhebi').css({'backgroundColor':"rgb(124, 125, 129)",'z-index':'100','top':headerh});
-        //alert(headerbottom+'ss'+headerleft);
+    var str='';
+    //alert(caidan.wj.length);
+    for (let i = 0; i < caidan[id].length; i++) {
+        str +='<li>'+caidan[id][i]+'</li>';
     }
+    fdcd.html(str);
+    //var lileft=$(this).offset().left;
+    fdcd.css({'top':headerh,'display':''});
+    $('#zhebi').css({'backgroundColor':"rgb(124, 125, 129)",'z-index':'100','top':headerh});
+    //alert(headerbottom+'ss'+headerleft);
+}
+function zhebi(){
+    $('#zhebi').css({'backgroundColor':"rgb(124, 125, 129)",'z-index':'100','top':headerh});
+}
+function loadhtml(url){
+    $('#loadhtml').load(url);
+    $('#loadhtml').show(100);
+    $('#loadhtml').css({'z-index':'101'});
+    zhebi()
+}
+$('.denglunojs').click(function(){
+    loadhtml('./login.html')
+})
 $('#wj').click(function(){
     $("#cd li").css({'backgroundColor':headerbj,"color":headercolor})
     $(this).css({"backgroundColor":"#fff","color":"black"});
@@ -87,6 +101,7 @@ $("#zhebi").click(function(){
     fdcd.css({'display':'none'});
     $('#zhebi').css({"backgroundColor":"#fff",'z-index':'-100'});
     $("#cd li").css({"backgroundColor":headerbj,"color":headercolor});
+    $('#loadhtml').hide(100)
 })
 //菜单切换功能结束
 
@@ -100,8 +115,10 @@ $('#headerright li').hover(
     }
 )
 
-$('#left').load("./left.html");
 
+$('#denglunojs').click(function(){
+    loadhtml('./login.html')
+})
 
 //尺寸随窗口变化
 $(window).resize(function(){
@@ -111,3 +128,19 @@ $(window).resize(function(){
   });
 
 //登陆按钮
+//left
+$('.list li').click(function(){
+    $('.list li').removeClass('liaction');
+    $(this).addClass('liaction');
+})
+var dlyesno=false;
+if (dlyesno){
+    $('.dengluno').css('display','none')
+    $('.denglu').css('display','')
+}else{
+    $('.dengluno').css('display','block');
+    $('.denglu').css('display','none');
+}
+$('.dengluno').click(function(){
+    ipc.send('open-loginview');
+})

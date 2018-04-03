@@ -1,49 +1,9 @@
 <style>
 
 </style>
-<div id="leftinfo" >
-    <div class="dengluno">
-        <span>登录</span>
-    </div>
-    <div class="denglu">
-        <div><img src="../img/1.png"  alt=""></div>
-        <div><span>光年之外</span></div>
-    </div>
-    <div></div>
-    <div class="list">
-        <ul>
-            <li><img src="../img/1.png" height="20px" alt=""> <span>配置</span></li>
-            <li><img src="../img/1.png" height="20px" alt=""> <span>设置</span></li>
-            <li><img src="../img/1.png" height="20px" alt=""> <span>列表1</span></li>
-        </ul>
-        <ul>
-            <li><img src="../img/1.png" height="20px" alt=""> <span>列表1</span></li>
-            <li><img src="../img/1.png" height="20px" alt=""> <span>列表1</span></li>
-        </ul>
-        <ul>
-            <li><img src="../img/1.png" height="20px" alt=""> <span>列表1</span></li>
-            <li><img src="../img/1.png" height="20px" alt=""> <span>列表1</span></li>
-            <li><img src="../img/1.png" height="20px" alt=""> <span>列表1</span></li>
-            <li><img src="../img/1.png" height="20px" alt=""> <span>列表1</span></li>
-        </ul>
-    </div>
-</div>
+
 
 <script>
-    var ipc=require('electron').ipcRenderer;
-    $('.list li').click(function(){
-    $('.list li').removeClass('liaction');
-    $(this).addClass('liaction');
-    })
-    var dlyesno=false;
-if (dlyesno){
-   $('.dengluno').css('display','none')
-   $('.denglu').css('display','')
-}else{
-    $('.dengluno').css('display','block');
-    $('.denglu').css('display','none');
-}
-$('.dengluno').click(function(){
-    ipc.send('open-loginview');
-    })
+
+
 </script>

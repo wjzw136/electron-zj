@@ -22,13 +22,8 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
-<<<<<<< HEAD
-    "jquery": "^3.3.1",
-    "proxy": "^0.2.4"
-=======
     "ejs": "^2.5.8",
     "jquery": "^3.3.1",
     "serialport": "^6.1.1"
->>>>>>> b13ee6af865727d478ff8ab23bb84741211a0f2a
   }
 }
