@@ -1,0 +1,46 @@
+.denglu{
+    margin: 20px 0px;
+    text-align: center;
+
+}
+
+.denglu img{
+    width: 40px;
+    border-radius: 20px;
+}
+#leftinfo li{
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+.list ul{
+    border-bottom: 1px solid #E0E0E0;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.list ul:last-child{
+    border-bottom: 0px;
+}
+.list li img{
+    vertical-align: middle
+}
+.liaction{
+    background-color: powderblue;
+    border-left:red solid 3px;
+    color: red;
+
+}
+.dengluno{
+    margin: 20px 20px;
+    background-color: red;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0px;
+    color: #fff;
+    cursor: default;
+    font-size: 18px;
+
+}
