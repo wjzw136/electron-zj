@@ -1,119 +1,359 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>app</title>
-    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/left.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <style>
-      .err{
-        height: 40px;
-        background-color: aliceblue
-      }
-    </style>
-    <script>
-        // You can also require other files to run in this process
-        require('../js/config');
-        require('../js/require');
-    </script>
-  </head>
-  <body id="body">
-    <div id="header">
-      <div id="logo"></div>
-      <div id="bt">
-        <ul id="cd">
-          <li id="wj">文件</li>
-          <li id="bj">编辑</li>
-          <li id="sz">设置</li>
-          <li id='bz'>帮助</li>
-        </ul>
-      </div>
-      <div id='headerright'>
-        <li id="min">-</li>
-        <li id='max'>□</li>
-        <li id="gb">×</li>
-      </div>
+
+<head>
+  <meta charset="UTF-8">
+  <title>app</title>
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/left.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script>
+    // You can also require other files to run in this process
+    require('../js/config');
+    require('../js/require');
+  </script>
+</head>
+
+<body id="body">
+  <div id="header">
+    <div id="logo"></div>
+    <div id="bt">
+      <ul id="cd">
+        <li id="wj">文件</li>
+        <li id="bj">编辑</li>
+        <li id="sz">设置</li>
+        <li id='bz'>帮助</li>
+      </ul>
     </div>
-    <div id="main">
-      <div id="left">
-        <div id="leftinfo" >
-          <!-- <div class="dengluno">
+    <div id='headerright'>
+      <li id="min">-</li>
+      <li id='max'>□</li>
+      <li id="gb">×</li>
+    </div>
+  </div>
+  <div id="main">
+    <div id="left">
+      <div id="leftinfo">
+        <!-- <div class="dengluno">
               <span>登录</span>
           </div> -->
-          <div class="denglunojs">
-              <span>登录</span>
+        <div class="denglunojs">
+          <span>登录</span>
+        </div>
+        <div class="denglu">
+          <div>
+            <img src="../img/1.png" alt="">
           </div>
-          <div class="denglu">
-              <div><img src="../img/1.png"  alt=""></div>
-              <div><span>光年之外</span></div>
-          </div>
-          <div></div>
-          <div class="list">
-              <ul>
-                  <li><img src="../img/1.png" height="20px" alt=""> <span>配置</span></li>
-                  <li><img src="../img/1.png" height="20px" alt=""> <span>设置</span></li>
-                  <li><img src="../img/1.png" height="20px" alt=""> <span>列表1</span></li>
-              </ul>
-              <ul>
-                  <li><img src="../img/1.png" height="20px" alt=""> <span>列表1</span></li>
-                  <li><img src="../img/1.png" height="20px" alt=""> <span>列表1</span></li>
-              </ul>
-              <ul>
-                  <li><img src="../img/1.png" height="20px" alt=""> <span>列表1</span></li>
-                  <li><img src="../img/1.png" height="20px" alt=""> <span>列表1</span></li>
-                  <li><img src="../img/1.png" height="20px" alt=""> <span>列表1</span></li>
-                  <li><img src="../img/1.png" height="20px" alt=""> <span>列表1</span></li>
-              </ul>
+          <div>
+            <span>光年之外</span>
           </div>
         </div>
-      </div>
-      <div id="right">
-      <div style="height:20px"></div>
-        <span id="sda">sdsdsd</span>
-      <div>
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+        <div></div>
+        <div class="list">
+          <ul>
+            <li>
+              <img src="../img/1.png" height="20px" alt="">
+              <span>配置</span>
+            </li>
+            <li>
+              <img src="../img/1.png" height="20px" alt="">
+              <span>设置</span>
+            </li>
+            <li>
+              <img src="../img/1.png" height="20px" alt="">
+              <span>列表1</span>
+            </li>
           </ul>
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="home">
-                <div>
-                    sdsdad
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="profile">.dsdasdasds..</div>
-            <div role="tabpanel" class="tab-pane" id="messages">..2快递那里等你.</div>
-            <div role="tabpanel" class="tab-pane" id="settings">.哦vi分窘境擦擦..</div>
-          </div>
+          <ul>
+            <li>
+              <img src="../img/1.png" height="20px" alt="">
+              <span>列表1</span>
+            </li>
+            <li>
+              <img src="../img/1.png" height="20px" alt="">
+              <span>列表1</span>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img src="../img/1.png" height="20px" alt="">
+              <span>列表1</span>
+            </li>
+            <li>
+              <img src="../img/1.png" height="20px" alt="">
+              <span>列表1</span>
+            </li>
+            <li>
+              <img src="../img/1.png" height="20px" alt="">
+              <span>列表1</span>
+            </li>
+            <li>
+              <img src="../img/1.png" height="20px" alt="">
+              <span>列表1</span>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <form action="sd" method="get">
-          <input type="text">
-          <button type="submit">sda</button>
-        </form>
-      </div>
-      <div style="height:20px"></div>
-      </div>
-      <!-- <div style="clear:both"></div> -->
-
     </div>
-    <div></div>
+    <div id="right">
+      <div style="height:20px"></div>
+      <span id="sda">sdsdsd</span>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <p>sdadadadsfdgrfgs</p>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+          <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a>
+        </li>
+        <li role="presentation">
+          <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a>
+        </li>
+        <li role="presentation">
+          <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+          <div>
+            sdsdad
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">.dsdasdasds..</div>
+        <div role="tabpanel" class="tab-pane" id="messages">..2快递那里等你.</div>
+        <div role="tabpanel" class="tab-pane" id="settings">.哦vi分窘境擦擦..</div>
+      </div>
+
+      <div style="height:20px">sssss</div>
+    </div>
+
+  </div>
+  <!-- <div style="clear:both"></div> -->
+
     <div id="loadhtml"></div>
     <div id="fdcd"></div>
     <div id="zhebi"></div>
 
 
+  <script>
 
-    <script>
+    // You can also require other files to run in this process
+    require('../renderer.js');
+  </script>
+</body>
 
-      // You can also require other files to run in this process
-      require('../renderer.js');
-    </script>
-  </body>
 </html>

@@ -8,6 +8,10 @@ var ipc=require('electron').ipcRenderer;
 var view =remote.getCurrentWindow();
 //var mainWindow=remote.BrowserWindow;
 //退出程序
+function htmlready(){
+    var winh=$('body').height()
+    $('body').css({'height':winh})
+}
 
 //$('#left').load("./left.html");
 $('#gb').click(

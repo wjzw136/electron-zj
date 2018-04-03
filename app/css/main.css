@@ -13,6 +13,7 @@
     font-family: 微软雅黑;
     overflow: hidden;
     height: 100%;
+    width: 100%;
   }
   #header{
     -webkit-app-region: drag;
@@ -31,8 +32,8 @@
   }
   #header #logo{
     float: left;
-    width: 29px;
-    height: 29px;
+    width: 30px;
+    height: 30px;
     background-image: url('../img/a.png');
   }
   #header #bt{
@@ -71,6 +72,7 @@
     height: 100%;
     overflow:auto;
     padding: 0px 20px;
+
   }
 
   #ceshi li{
@@ -87,7 +89,7 @@
     height: 40px;
     line-height: 40px;
     padding: 0px 10px;
-    border-bottom:1px solid red;
+     border-bottom:1px solid #E0E0E0;
     background-color: white
   }
   #fdcd li:last-child{
@@ -99,13 +101,15 @@
     height: 100%;
     z-index: -100;
     opacity: 0.5;
-    top: 30px;
+    /* top: 30px; */
   }
+
   #loadhtml{
-    width: 250px;
+    background-color: aqua;
     position: fixed;
-    z-index: -90;
-    top:100px;
-    text-align: center
+    z-index: -120;
+    top:120px;
+  }
+  .loginclass{
 
   }
