@@ -63,14 +63,13 @@ function zhebi(){
     $('#zhebi').css({'backgroundColor':"rgb(124, 125, 129)",'z-index':'100','top':headerh});
 }
 function loadhtml(url){
+    $('#loadhtml').html('');
     $('#loadhtml').load(url);
-    $('#loadhtml').show(100);
-    $('#loadhtml').css({'z-index':'101'});
-    zhebi()
+    $('.tcbox').show();
+    $('.tcbox').css({'z-index':'101'});
+    $('.box-zb').css({'backgroundColor':"rgb(124, 125, 129)"})
 }
-$('.denglunojs').click(function(){
-    loadhtml('./login.html')
-})
+
 $('#wj').click(function(){
     $("#cd li").css({'backgroundColor':headerbj,"color":headercolor})
     $(this).css({"backgroundColor":"#fff","color":"black"});
@@ -105,7 +104,9 @@ $("#zhebi").click(function(){
     fdcd.css({'display':'none'});
     $('#zhebi').css({"backgroundColor":"#fff",'z-index':'-100'});
     $("#cd li").css({"backgroundColor":headerbj,"color":headercolor});
-    $('#loadhtml').hide(100)
+})
+$('.box-zb').click(function(){
+    $('.tcbox').hide();
 })
 //菜单切换功能结束
 
@@ -120,9 +121,6 @@ $('#headerright li').hover(
 )
 
 
-$('#denglunojs').click(function(){
-    loadhtml('./login.html')
-})
 
 //尺寸随窗口变化
 $(window).resize(function(){
@@ -153,3 +151,15 @@ $('#closebotton').click(function(){
     alert('dsdsdad')
 
  })
+
+
+
+ $('#denglunojs').click(function(){
+    loadhtml('./login.html')
+})
+$('#peizhi').click(function(){
+    loadhtml('./shipin.html')
+})
+$('#kankan').click(function(){
+    loadhtml('./kankan.html')
+})
