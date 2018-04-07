@@ -2,7 +2,7 @@
     list-style: none;
   }
 
-  body,li,ul,img,a,div{
+  body,li,ul,img,a,div,header{
     margin: 0px;
     padding: 0px;
     font-size: 14px;
@@ -14,6 +14,12 @@
     overflow: hidden;
     height: 100%;
     width: 100%;
+
+  }
+  iframe{
+    border-style: 0px;
+    padding: 0px;
+    margin: 0px;
   }
   #header{
     -webkit-app-region: drag;
@@ -67,12 +73,14 @@
     min-width: 150px;
     max-width: 250px;
     border-right: 1px #E0E0E0 solid;
+    font-weight: 600
   }
   #main #right{
+    padding: 10px;
+    margin: 0px;
     height: 100%;
     overflow:auto;
-    padding: 0px 20px;
-
+    overflow-x: hidden;
   }
 
   #ceshi li{
@@ -127,3 +135,8 @@
   .loginclass{
 
   }
+
+
+
+
+
