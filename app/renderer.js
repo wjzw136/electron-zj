@@ -167,7 +167,16 @@ $('#right').load('./fuwuqi.html');
 
 $('#chuankou').click(function(){
     $('#right').load('./chuankou.html');
+
 })
 $('#home1').click(function(){
-    $('#right').load('./fuwuqi.html');
+    $('#right').load('./fuwuqi.html',function(res,req){
+        //alert(res);
+    });
+})
+$('#line').click(function(){
+    $('#right').load('./line-gradient.html',function(res,req){
+        //alert(res);
+    })
+    $('#right').load('./line-gradient.html')
 })
