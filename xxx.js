@@ -1,12 +1,4 @@
-const net = require('net');
-const server = net.createServer((socket) => {
-    socket.end('goodbye\n');
-  }).on('error', (err) => {
-    // handle errors here
-    throw err;
-  });
 
-  // grab an arbitrary unused port.
-  server.listen(() => {
-    console.log('opened server on', server.address());
-  });
+var body={"success":true,"response":{"has_more":true,"total_collections":120,"current_offset":0,"limit":2,"collections":[{"id":"1","title":"\u4e09\u4e0a\u60a0\u4e9c","keyword":"\u4e09\u4e0a\u60a0\u4e9c","cover_url":"https:\/\/static.avgle.com\/media\/videos\/tmb\/19944\/1.jpg","total_views":29797467,"video_count":82,"collection_url":"https:\/\/avgle.com\/c\/\u4e09\u4e0a\u60a0\u4e9c"},{"id":"2","title":"\u9ad8\u6a4b\u3057\u3087\u3046\u5b50","keyword":"\u9ad8\u6a4b\u3057\u3087\u3046\u5b50","cover_url":"https:\/\/static.avgle.com\/media\/videos\/tmb\/236\/1.jpg","total_views":15826217,"video_count":41,"collection_url":"https:\/\/avgle.com\/c\/\u9ad8\u6a4b\u3057\u3087\u3046\u5b50"}]}}
+var xsa=JSON.parse(body);
+console.log(xsa);
