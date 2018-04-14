@@ -1,0 +1,27 @@
+//vpn创建
+
+
+Add-VpnConnection
+   [-Name] <String>
+   [-ServerAddress] <String>
+   [-RememberCredential]
+   [-SplitTunneling]
+   [-Force]
+   [-PassThru]
+   [-ServerList <CimInstance[]>]
+   [-DnsSuffix <String>]
+   [-IdleDisconnectSeconds <UInt32>]
+   [-PlugInApplicationID] <String>
+   -CustomConfiguration <XmlDocument>
+   [-CimSession <CimSession[]>]
+   [-ThrottleLimit <Int32>]
+   [-AsJob]
+   [-WhatIf]
+   [-Confirm]
+   [<CommonParameters>]
+
+
+
+   例子 Add-VpnConnection -Name "Test1" -ServerAddress "10.1.1.1" -PassThru
+
+   https://docs.microsoft.com/zh-cn/powershell/module/vpnclient/add-vpnconnection?view=win10-ps
