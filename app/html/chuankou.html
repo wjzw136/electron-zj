@@ -167,9 +167,13 @@
 </style>
 
 <script>
+
     $('#settings').load('./line-gradient.html');
     $('#tubiao').click(function () {
-        $('#settings').load('./line-gradient.html');
+        $('#settings').load('./line-gradient.html',function(){
+            clearInterval(timer2);
+            var timer1 = setInterval("aabb()", 1000);
+        });
     })
 
 

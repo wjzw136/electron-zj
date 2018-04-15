@@ -174,9 +174,14 @@ $('#home1').click(function(){
         //alert(res);
     });
 })
+
+var timer1,timer2;
 $('#line').click(function(){
     $('#right').load('./line-gradient.html',function(res,req){
-        //alert(res);
+        clearInterval(timer1);
+        var timer2 = setInterval("aabb()", 1000);
     })
-    $('#right').load('./line-gradient.html')
+})
+$('#dianying').click(function(){
+    $('#right').load('./dianying.html')
 })

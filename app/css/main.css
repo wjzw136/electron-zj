@@ -17,7 +17,7 @@
 
   }
   iframe{
-    border-style: 0px;
+    border: 0px;
     padding: 0px;
     margin: 0px;
   }
@@ -76,10 +76,10 @@
 
   }
   #main #right{
-    padding: 10px;
+    padding: 0px;
     margin: 0px;
     height: 100%;
-    overflow:auto;
+    overflow:hidden;
     overflow-x: hidden;
   }
 
