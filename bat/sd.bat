@@ -1,6 +1,6 @@
 REM 创建vpn连接
 
-REM powershell Add-VpnConnection -Name "Test3" -ServerAddress "10.1.1.1" -PassThru
+powershell Add-VpnConnection -Name "Test3" -ServerAddress "10.1.1.1" -PassThru
 
 
 REM ————————————————————————————
@@ -13,3 +13,4 @@ ipconfig/all
 REM ————————————————————————————
 REM 连接VPN
 rasdial
+REM 刷新DNS缓存 ipconfig /flushdns
