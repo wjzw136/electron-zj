@@ -175,11 +175,12 @@ $('#home1').click(function(){
     });
 })
 
-var timer1,timer2;
+var xunhuan,timer2;
 $('#line').click(function(){
     $('#right').load('./line-gradient.html',function(res,req){
-        clearInterval(timer1);
-        var timer2 = setInterval("aabb()", 1000);
+        clearInterval(xunhuan);
+        var xunhuan =setInterval('aabb()',1000);
+        console.log(xunhuan)
     })
 })
 $('#dianying').click(function(){
